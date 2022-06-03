@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/logo2.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Jay Chou</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <h1>
+            <a href="index.html">
+              <img src="./assets/logo2.png" class="logo" />
+              <span>Jay Chou</span></a
+            >
+          </h1>
+        </li>
+        <li>
+          <a href="index.html">
+            <span>About Me</span>
+            <div class="line"></div>
+          </a>
+        </li>
+        <li class="active">
+          <a href="projects.html">
+            <span>Projects</span>
+            <div class="line"></div>
+          </a>
+        </li>
+        <li>
+          <a href="./assets/Resume_Jay.pdf" target="_blank">
+            <div class="line"></div>
+            <span>Resume</span>
+          </a>
+        </li>
+      </ul>
+      <section id="socials">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/jaychou0129" target="_blank"
+              ><span class="fa-brands fa-linkedin"></span
+              ><span>LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.github.com/jaychou0129" target="_blank"
+              ><span class="fa-brands fa-github"></span><span>GitHub</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:jaychou@berkeley.edu"
+              ><span class="fa-solid fa-envelope"></span><span>Email</span></a
+            >
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section id="project" class="reverse">
+      <div class="text">
+        <h2>Minesweeper</h2>
+        <small>Feb - Mar 2022</small>
+        <p>
+          A recreation the original minesweeper game using <em>React</em> and
+          <em>Bootstrap</em>.
+        </p>
+        <p class="links">
+          <a
+            href="https://jaychou0129.github.io/PicCollage-minesweeper-count7/#/minesweeper"
+            target="_blank"
+            ><span class="fa-solid fa-up-right-from-square"></span
+          ></a>
+          <a
+            href="https://github.com/jaychou0129/PicCollage-minesweeper-count7"
+            target="_blank"
+            ><span class="fa-brands fa-github-square"></span
+          ></a>
+        </p>
+      </div>
+      <img src="./assets/minesweeper.gif" class="thumbnail" />
+    </section>
+    <section id="project">
+      <div class="text">
+        <h2>Reconstructor</h2>
+        <small>Jan - May 2022</small>
+        <p>
+          Application of the <em>NeRF</em> machine learning model (<a
+            href="https://nerfies.github.io/"
+            target="_blank"
+            >Nerfies</a
+          >) to reconstruct a 3D rendering of my face using multiple 2D images
+          from different angles, written in <em>PyTorch</em>.
+        </p>
+        <p class="links">
+          <a
+            href="https://github.com/callaunchpad/reconstructor"
+            target="_blank"
+            ><span class="fa-brands fa-github-square"></span
+          ></a>
+        </p>
+      </div>
+      <img src="./assets/reconstructor.gif" class="thumbnail" />
+    </section>
+    <section id="project" class="reverse">
+      <div class="text">
+        <h2>Duet Interpolator</h2>
+        <small>Sep - Dec 2021</small>
+        <p>
+          Application of a
+          <a
+            href="https://adasp.telecom-paris.fr/rc/demos_companion-pages/cifka-ss-vq-vae/"
+            target="_blank"
+            >VQ-VAE</a
+          >
+          using <em>PyTorch</em> to apply audio style transfer between two
+          provided wav files. The web application was written in <em>Flask</em>.
+        </p>
+        <p class="links">
+          <a href="https://www.ocf.berkeley.edu/~jaychou/duet/" target="_blank"
+            ><span class="fa-solid fa-up-right-from-square"></span
+          ></a>
+          <a href="https://github.com/18praveenb/ss-vq-vae" target="_blank"
+            ><span class="fa-brands fa-github-square"></span
+          ></a>
+        </p>
+      </div>
+      <img src="./assets/duet.png" class="thumbnail" />
+    </section>
+    <section id="project">
+      <div class="text">
+        <h2>QuiConnect</h2>
+        <small>Oct 2021</small>
+        <p>
+          A cross-platform social media QR-code generator/scanner mobile
+          application built using <em>React Native</em>, incorporating
+          third-party QR code libraries.
+        </p>
+        <p class="links">
+          <a href="https://devpost.com/software/quiconnect" target="_blank"
+            ><span class="fa-solid fa-up-right-from-square"></span
+          ></a>
+          <a href="https://github.com/aardisaputra/QuiConnect" target="_blank"
+            ><span class="fa-brands fa-github-square"></span
+          ></a>
+          <a href="https://youtu.be/vczOOMk28RY" target="_blank"
+            ><span class="fa-brands fa-youtube"></span
+          ></a>
+        </p>
+      </div>
+      <img src="./assets/quiconnect.png" class="thumbnail" />
+    </section>
+    <section id="project" class="reverse">
+      <div class="text">
+        <h2>MyGymBud</h2>
+        <small>Jun 2021</small>
+        <p>
+          An iOS workout tracking app built with <em>SwiftUI</em> that has
+          builtin timer, grapher, and allows automatic unit conversions and
+          comparison.
+        </p>
+        <p class="links">
+          <a href="https://github.com/jaychou0129/iOS-MyGymBud" target="_blank"
+            ><span class="fa-brands fa-github-square"></span
+          ></a>
+          <a href="https://youtu.be/windFiNYLds" target="_blank"
+            ><span class="fa-brands fa-youtube"></span
+          ></a>
+        </p>
+      </div>
+      <img src="./assets/mygymbud.png" class="thumbnail" />
+    </section>
+    <section id="project">
+      <div class="text">
+        <h2>JayWalker</h2>
+        <small>Feb - Mar 2021</small>
+        <p>
+          A portfolio app built with <em>jQuery</em> and <em>Bootstrap</em> that
+          dynamically parses JSON input and generates HTML content. A custom
+          filter component was created for better user experience.
+        </p>
+        <p class="links">
+          <a href="https://jaywalker.herokuapp.com/" target="_blank"
+            ><span class="fa-solid fa-up-right-from-square"></span
+          ></a>
+        </p>
+      </div>
+      <img src="./assets/jaywalker.png" class="thumbnail" />
+    </section>
+    <section id="project" class="reverse">
+      <div class="text">
+        <h2>Mailador</h2>
+        <small>Feb 2021</small>
+        <p>
+          An email subscription system that generates a list of emails for each
+          campaign based on the preference list each subscriber filled out,
+          built using <em>PHP</em>, <em>MySQL</em>, and <em>Bootstrap</em>.
+        </p>
+        <p class="links">
+          <a href="http://mailador.herokuapp.com/" target="_blank"
+            ><span class="fa-solid fa-up-right-from-square"></span
+          ></a>
+        </p>
+      </div>
+      <img src="./assets/mailador.png" class="thumbnail" />
+    </section>
+    <section id="project">
+      <div class="text">
+        <h2>Prescription Manual</h2>
+        <small>Jul - Aug 2019</small>
+        <p>
+          An online prescription manual built for a local hospital that supports
+          custom markdown and search functions built with <em>ASP.NET</em> and
+          <em>Microsoft SQL server</em>, automating the organization of
+          medicinal information.
+        </p>
+        <p class="links">
+          <a
+            href="https://github.com/jaychou0129/prescription-manual"
+            target="_blank"
+            ><span class="fa-brands fa-github-square"></span
+          ></a>
+          <a href="https://youtu.be/5C1ulyojso4" target="_blank"
+            ><span class="fa-brands fa-youtube"></span
+          ></a>
+        </p>
+      </div>
+      <img src="./assets/prescriptionmanual.png" class="thumbnail" />
+    </section>
+    <section id="project" class="reverse">
+      <div class="text">
+        <h2>MDID Connect</h2>
+        <small>Sep 2018 - May 2019</small>
+        <p>
+          A classroom reservation system built for my high school using
+          <em>Bootstrap</em>, <em>MySQL</em>, and <em>PHP</em>.
+        </p>
+        <p class="links">
+          <a href="https://mdidconnect.herokuapp.com/" target="_blank"
+            ><span class="fa-solid fa-up-right-from-square"></span
+          ></a>
+          <a href="https://github.com/jaychou0129/mdidconnect" target="_blank"
+            ><span class="fa-brands fa-github-square"></span
+          ></a>
+          <a href="https://youtu.be/Vyr0e-Eu3rg" target="_blank"
+            ><span class="fa-brands fa-youtube"></span
+          ></a>
+        </p>
+      </div>
+      <img src="./assets/mdidconnect.png" class="thumbnail" />
+    </section>
+  </body>
+</html>

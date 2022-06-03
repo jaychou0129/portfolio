@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Hind:wght@400;700&display=swap");
+
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+  --black: #171321;
+  --white: #f7f8fa;
+  --primary: #423fa6;
+  --secondary: #4b4fa6;
+  --link: #20968a;
+  --highlight: #f2be5c;
+  --base-font-size: 1.3rem;
+  --emph-font: "Expletus Sans", cursive;
+  --norm-font: "Hind", sans-serif;
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+/* generic styles for the page */
+body {
+  padding: 0;
+  padding-bottom: 2rem;
+  margin: 0;
+  font-family: var(--norm-font);
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: var(--base-font-size);
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+nav #socials a {
+  color: var(--white);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+a,
+nav #socials a:hover {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+em {
+  background-color: var(--white);
+  color: var(--secondary);
+  font-family: var(--emph-font);
+  border-radius: 2px;
+  padding: 1px;
+}
+
+small {
+  font-size: 1rem;
+}
+#intro {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 1rem;
+  max-width: 900px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#intro h2 {
+  font-family: var(--emph-font);
+  font-size: 3rem;
+  color: var(--highlight);
+}
+
+#intro h2 .name {
+  color: var(--white);
+  display: block;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#intro .heading-text,
+#project .text {
+  max-width: 480px;
+}
+
+#intro img,
+#project img {
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 10px 15px var(--secondary);
+  flex-basis: 100%;
+}
+#intro img {
+  max-width: 70%;
+}
+#project img {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#intro img:hover,
+#project img:hover {
+  filter: brightness(1.1);
+  box-shadow: 15px 20px var(--highlight);
+}
+
+#project {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  gap: 2rem;
+  max-width: 900px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+#project h2 {
+  font-family: var(--emph-font);
+  font-size: 2rem;
+  color: var(--highlight);
+}
+
+#project p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#project .heading-text {
+  max-width: 480px;
+}
+
+#project p.links {
+  font-size: 1.5rem;
+}
+#project p.links a {
+  margin-right: 1rem;
+  color: var(--white);
+}
+#project p.links a:hover {
+  color: var(--link);
+}
+
+nav {
+  font-family: var(--emph-font);
+  font-size: 80%;
+  padding: 3rem 2rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav img.logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
+}
+
+nav li a {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+nav h1 span {
+  display: none;
+}
+
+nav a {
+  color: var(--white);
+  display: block;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+#socials {
+  flex-basis: 100%;
+  margin-top: 1rem;
+}
+
+#socials ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row;
+  gap: 3rem;
+  font-family: var(--emph-font);
+  font-size: 1.1rem;
+}
+
+#socials span {
+  display: none;
+}
+
+#socials span[class^="fa-"] {
+  font-size: 1.5rem;
+  display: block;
+}
+
+@media (min-width: 930px) {
+  nav h1 span {
+    display: block;
+  }
+
+  nav div.line {
+    width: 0px;
+    height: 2px;
+    background-color: var(--white);
+    border-radius: 1px;
+    -webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+  }
+
+  nav li.active {
+    margin-right: auto;
+  }
+  nav a:hover div.line,
+  nav .active div.line {
+    width: 152px;
+  }
+  nav a:hover div.line {
+    background-color: var(--highlight);
+  }
+  nav .active a:hover div.line {
+    width: 250px;
+  }
+  #socials {
+    margin-top: 0;
+    position: absolute;
+    top: 260px;
+    left: -75.6px;
+    transform: rotate(90deg);
+  }
+
+  #socials span {
+    display: block;
+  }
+  #socials span[class^="fa-"] {
+    display: none;
+  }
+
+  #intro,
+  #project {
+    flex-flow: row nowrap;
+  }
+
+  #intro img,
+  #project img {
+    flex-basis: auto;
+    width: 35%;
+  }
+
+  #project.reverse .text {
+    order: 2;
+  }
+  #project.reverse img {
+    order: 1;
+  }
+}
+
+@media (min-width: 1111px) {
+  #socials {
+    left: calc(-520px + 40vw);
+  }
+}
