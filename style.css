@@ -103,13 +103,16 @@ small {
   object-fit: contain;
   border-radius: 10px;
   box-shadow: 10px 15px var(--secondary);
-  flex-basis: 100%;
+  width: 100%;
 }
-#intro img {
+#intro div.cover-img {
+  flex-basis: 100%;
   max-width: 70%;
 }
-#project img {
+
+#project div.img-container {
   max-width: 90%;
+  flex-basis: 100%;
   margin: 0 auto;
 }
 
@@ -230,7 +233,20 @@ nav a:hover {
   display: block;
 }
 
-@media (min-width: 930px) {
+a.btn {
+  background: var(--highlight);
+  padding: 0.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  color: var(--primary);
+  font-family: var(--emph-font);
+}
+
+a.btn:hover {
+  filter: brightness(1.2);
+}
+
+@media (min-width: 900px) {
   #about::after {
     content: "Me";
   }
@@ -283,9 +299,9 @@ nav a:hover {
     flex-flow: row nowrap;
   }
 
-  #intro img,
-  #project img {
-    flex-basis: auto;
+  #intro div.cover-img,
+  #project div.img-container {
+    flex-basis: 35%;
     width: 35%;
   }
 
