@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/logo2.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Jay Chou's Portfolio - Projects</title>
+    <meta
+      name="description"
+      content="The personal portfolio of an enthusiastic full-stack developer."
+    />
+    <meta
+      property="og:url"
+      content="https://jaychou0129.github.io/portfolio/index.html/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jay Chou's Portfolio" />
+    <meta
+      property="og:description"
+      content="The personal portfolio of an enthusiastic full-stack developer."
+    />
+    <meta
+      property="og:image"
+      content="https://jaychou0129.github.io/portfolio/assets/thumbnail.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <h1>
+            <a href="index.html">
+              <img src="./assets/logo2.png" class="logo" />
+              <span>Jay Chou</span></a
+            >
+          </h1>
+        </li>
+        <li>
+          <a href="index.html">
+            <span id="about">About </span>
+            <div class="line"></div>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <span>Projects</span>
+            <div class="line"></div>
+          </a>
+        </li class="active">
+        <li class="active">
+          <a href="work.html">
+            <span>Work</span>
+            <div class="line"></div>
+          </a>
+        </li>
+        <li>
+          <a href="./assets/Resume-20220820-2024.pdf" target="_blank">
+            <div class="line"></div>
+            <span>Resume</span>
+          </a>
+        </li>
+      </ul>
+      <section id="socials">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/jaychou0129" target="_blank"
+              ><span class="fa-brands fa-linkedin"></span
+              ><span>LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.github.com/jaychou0129" target="_blank"
+              ><span class="fa-brands fa-github"></span><span>GitHub</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:jaychou@berkeley.edu"
+              ><span class="fa-solid fa-envelope"></span><span>Email</span></a
+            >
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <section id="project" class="reverse">
+      <div class="text">
+        <h2>MixerChat @ PicCollage</h2>
+        <small>Jun 2022 - Present</small>
+        <p>
+          A mobile-supporting video conferencing platform that specializes in seamless breakout experience using <em>Vue</em>, <em>Nuxt 3</em> and <em>Daily.co API</em>. I worked on this project from the beginning until it was launched.
+        </p>
+        <p class="links">
+          <a
+            href="https://mixerchat.com/"
+            target="_blank"
+            ><span class="fa-solid fa-up-right-from-square"></span
+          ></a>
+        </p>
+      </div>
+      <div class="img-container">
+        <a
+          href="https://mixerchat.com/"
+          target="_blank"
+          ><img src="./assets/mixerchat.gif" class="thumbnail"
+        /></a>
+      </div>
+    </section>
+    <section id="project">
+      <div class="text">
+        <h2>Groupful @ PicCollage</h2>
+        <small>May 2022</small>
+        <p>
+          A shared message wall that supports text, image, GIF, and video. I built the video upload and automatic compression feature with <em>Firebase Functions</em> and <em>FFMPEG</em>, updated UX using <em>React</em>, and improved the SEO.
+        </p>
+        <p class="links">
+          <a
+            href="https://groupful.app/"
+            target="_blank"
+            ><span class="fa-solid fa-up-right-from-square"></span
+          ></a>
+        </p>
+      </div>
+      <div class="img-container">
+        <a
+          href="https://groupful.app/"
+          target="_blank"
+          ><img src="./assets/groupful.gif" class="thumbnail"
+        /></a>
+      </div>
+    </section>
+    <section id="project" class="reverse">
+      <div class="text">
+        <h2>Prescription Manual @ Sinlau Hospital</h2>
+        <small>Jul - Aug 2019</small>
+        <p>
+          An online prescription manual built for a local hospital that supports
+          custom markdown and search functions built with <em>ASP.NET</em> and
+          <em>Microsoft SQL server</em>, automating the organization of
+          medicinal information.
+        </p>
+        <p class="links">
+          <a
+            href="https://github.com/jaychou0129/prescription-manual"
+            target="_blank"
+            ><span class="fa-brands fa-github-square"></span
+          ></a>
+          <a href="https://youtu.be/5C1ulyojso4" target="_blank"
+            ><span class="fa-brands fa-youtube"></span
+          ></a>
+        </p>
+      </div>
+      <div class="img-container">
+        <a
+          href="https://github.com/jaychou0129/prescription-manual"
+          target="_blank"
+          ><img src="./assets/prescriptionmanual.png" class="thumbnail"
+        /></a>
+      </div>
+    </section>
+  </body>
+</html>
